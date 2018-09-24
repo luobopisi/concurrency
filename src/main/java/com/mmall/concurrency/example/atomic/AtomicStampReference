@@ -1,0 +1,1 @@
+//AtomicStampReference 解决CAS的ABA问题

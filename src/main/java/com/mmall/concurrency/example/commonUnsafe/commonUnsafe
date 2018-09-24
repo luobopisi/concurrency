@@ -1,0 +1,8 @@
+线程不安全的类
+StringBuilder //性能更好 用于局部变量的话，由于堆栈封闭，也不存在线程安全问题
+StringBuffer(安全)
+SimpleDateFormat
+DateTimeFormatter(安全)
+ArrayList
+HashSet
+HashMap

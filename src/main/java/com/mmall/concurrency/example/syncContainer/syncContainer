@@ -1,0 +1,4 @@
+同步容器
+ArrayList -> Vector,Stack(栈 先进后出)
+HashMap -> HashTable(key,value不能为null)
+Collections.synchronizedXXX(List,Set,Map)

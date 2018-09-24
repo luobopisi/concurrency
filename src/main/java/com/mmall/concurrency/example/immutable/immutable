@@ -1,0 +1,10 @@
+不可变对象
+final关键字：类、方法、变量
+    final修饰的类
+      不能被继承
+      final类中的方法 会被隐式的修饰成final方法
+    final修饰的方法
+    final修饰变量
+
+Collections.unmodifiableMap() 修饰
+ImmutableXXX

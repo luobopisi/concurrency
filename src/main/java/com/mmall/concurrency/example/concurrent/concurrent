@@ -1,0 +1,9 @@
+并发容器
+ArrayList -> CopyOnWriteArrayList 缺点 不能做到实时读 适用于读多写少场景
+                                  读写分离 最终一次性 另外开辟空间 读不加锁 写的时候加锁
+HashSet,TreeSet ->CopyOnWriteArraySet
+                  ConcurrentSkipListSet 支持自然排序 不能使用空元素 add remove.. 单个方法线程安全
+                                        若使用containsAll retainAll removeAll..要额外增加锁等手段保准安全 （批量不行）
+
+HashMap,TreeMap ->ConcurrentHashMap  针对读操作做了大量优化，存取速度比ConcurrentSkipListMap高
+                  ConcurrentSkipListMap（key有序 支持更高的并发）
